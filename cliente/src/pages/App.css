@@ -1,0 +1,89 @@
+.ventas {
+    text-align: center;
+    padding-top: 16px;
+  }
+  
+  .ventas-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .ventas-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .ventas-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .ventas-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .sugerencia{
+    padding: 5px;
+  }
+  
+  
+  .autosuggest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.autosuggest-label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 2;
+}
+
+.react-autosuggest__suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+}
